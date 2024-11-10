@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<!-- this applies on everything-->
+<style>
+     input:valid{
+        border:1px solid green
+     }
+     input:invalid{
+        border:5px solid red
+     }
+</style>
+
+<body>
+     <!--cc: valid invalid basic example -->
+    <!-- <form>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br>
+        <br> -->
+        <!-- cc: now since submit doesnt know if its valid or invalid so it remains green so to avoid this use button -->
+        <!-- cc: <input type="submit"> -->
+         <!-- <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- patterns -->
+     <!-- regular expressions -->
+<!--  credit card -->
+  
+<!--  **character classes:defines a set of characters.
+   -`[a-z]` : matches any one lowercase letters from a to z 
+   
+   -`[A-Z]` : matches any one uppercase letters from A to Z
+   -`[0-9]` : matches any one digit from 0-9
+   credit cards: \d{digit length} -> compares only digit and should be equal to the length
+   -->
+
+<form>
+<label for="creditcard">Credit Card :</label>
+<input id="creditcard" type="text"  pattern="\d{16}">
+<br>
+<br>
+
+<!-- dd-mm-yyyy -->
+ <!-- i want regular expression for matching numbers in the format of dd-mm-yyyy where dd will be from 1 to 31 ,mm will be from 1-12 and  yyyy will 0000 to any number(as we cant rememeber all of these) -->
+ <label for="datetext">Date:</label>
+ <input type="text" id="datetext" pattern="^(0[1-9]|[12][0-9]|3[01])-(0?[1-9]|1[0-2])-\d{4}$">
+ <br>
+ <br>
+ <label for="phone">Phone:</label>
+ <input type="tel" id="phone" pattern="[+][9][1]\d{10}">
+ <br>
+ <br>
+ <label for="url">URL:</label>
+ <input type="url" id="url">
+ <br>
+ <br>
+ <label for="texturl">MY URL:</label>
+ <input type="text" id="texturl" pattern="https?://.+">
+</form>
+</body>
+</html>

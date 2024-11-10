@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Audio ,Video and images</h2>
+
+    <h3>video</h3>
+      
+      <figure>
+         <!-- video tag -->
+     <!-- autoplay simply ny chalega kyuki google apna user exprience kharab ny karna chhata isliye 'autoplay muted ' m chalega
+      or  
+      'controls autoplay' se autoplay m chalega
+      'autoplay muted loop'se baar baar play hoga -->
+        <video height="200px" autoplay muted>
+            <source src="./video.mp4">
+      </video>
+      <!-- ye video m ho kya raha h -->
+      <figcaption>water fall video</figcaption>
+      </figure>
+
+
+      <h3>image with figure</h3>
+
+      <figure>
+        <img src="./car1.png" height="200px">
+        <figcaption>image photo</figcaption>
+      </figure>
+
+      <h3>audio with figure</h3>
+      <figure>
+        <!-- by default audio is not visiible so we have to use controls 
+         audio m sirf 'autoplay' kaam karega-->
+         <audio  autoplay controls>
+            <source src="./audio.mp3">
+         </audio>
+         <figcaption>audio with drum beats</figcaption>
+      </figure>
+    
+</body>
+</html>

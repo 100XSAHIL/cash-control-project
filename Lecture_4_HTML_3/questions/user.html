@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h2>User Registration Form</h2>
+    <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required
+        placeholder="placeholder" >
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required
+        placeholder="placeholder"
+        >
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required
+        placeholder="placeholder">
+        <br><br>
+
+        <label for="confirm_Password">Confirm Password:</label>
+        <input type="password" id="confirm_Password" name="confirm_Password" required
+        placeholder="placeholder" >
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob"  required
+         placeholder="placeholder" pattern="\d{4}-\d{2}-\d{2}">   
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required 
+        placeholder="placeholder" pattern="[+][9][1]\d{10}">
+        <br><br>
+
+        <label for="credit_Card">Credit Card Number:</label>
+        <input type="text" id="credit_Card" name="credit_Card" required
+        placeholder="placeholder" pattern="\d{16}">
+        <br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required
+        placeholder="placeholder" pattern="^[a-zA-Z0-9]+$">
+        <br><br>
+
+        <label for="website">Website URL:</label>
+        <input type="text" id="website" name="website" required
+        placeholder="placeholder" pattern="https?://.+">
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
